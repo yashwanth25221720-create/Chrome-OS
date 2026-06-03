@@ -19,6 +19,8 @@ export const defaultWidgets: Widget[] = [
   { id: "tasks", visible: true, order: 6 },
   { id: "notes", visible: false, order: 7 },
   { id: "aiproviders", visible: true, order: 8 },
+  { id: "dinogame", visible: false, order: 9 },
+  { id: "flappybird", visible: false, order: 10 },
 ];
 
 export const defaultState: HaloState = {

@@ -10,10 +10,13 @@ const NotesWidget = React.lazy(() => import("./widgets/NotesWidget"));
 const WeatherWidget = React.lazy(() => import("./widgets/WeatherWidget"));
 const PomodoroWidget = React.lazy(() => import("./widgets/PomodoroWidget"));
 const AIProvidersWidget = React.lazy(() => import("./widgets/AIProvidersWidget"));
+const DinoGameWidget = React.lazy(() => import("./widgets/DinoGameWidget"));
+const FlappyBirdWidget = React.lazy(() => import("./widgets/FlappyBirdWidget"));
 
 const WIDGET_MAP: Record<WidgetId, React.ComponentType> = {
   clock: ClockWidget, greeting: GreetingWidget, search: SearchWidget, quicklinks: QuickLinksWidget,
   tasks: TasksWidget, notes: NotesWidget, weather: WeatherWidget, pomodoro: PomodoroWidget, aiproviders: AIProvidersWidget,
+  dinogame: DinoGameWidget, flappybird: FlappyBirdWidget,
 };
 
 interface Props { id: WidgetId; }

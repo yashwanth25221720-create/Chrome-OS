@@ -1,6 +1,6 @@
 export type ViewKey = "home" | "bookmarks" | "notes" | "tasks" | "tabgroups" | "ai" | "workspaces" | "settings" | "adblocker";
 export type NoteType = "quick" | "markdown" | "website";
-export type WidgetId = "clock" | "greeting" | "search" | "quicklinks" | "tasks" | "notes" | "weather" | "pomodoro" | "aiproviders";
+export type WidgetId = "clock" | "greeting" | "search" | "quicklinks" | "tasks" | "notes" | "weather" | "pomodoro" | "aiproviders" | "dinogame" | "flappybird";
 
 export interface Note { id: string; title: string; content: string; type: NoteType; url?: string; createdAt: number; updatedAt: number; }
 export interface Task { id: string; title: string; done: boolean; dueDate?: string; priority: "low" | "medium" | "high"; category: string; createdAt: number; }

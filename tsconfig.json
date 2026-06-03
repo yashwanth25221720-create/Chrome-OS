@@ -10,12 +10,13 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "types": ["chrome"]
   },
-  "include": ["src", "vite.config.ts"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

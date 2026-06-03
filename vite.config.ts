@@ -1,6 +1,9 @@
-import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import fs from "fs";
+import path from "path";
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 export default defineConfig({
   plugins: [react()],
@@ -10,8 +13,8 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       input: {
-        index: resolve(__dirname, "index.html"),
-        serviceWorker: resolve(__dirname, "src/background/serviceWorker.ts")
+        index: path.resolve(__dirname, "index.html"),
+        serviceWorker: path.resolve(__dirname, "src/background/serviceWorker.ts")
       },
       output: {
         entryFileNames: "[name].js",
